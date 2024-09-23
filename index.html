@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- <<<<<Google Font>>>>> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <<<<<<Font Awesome>>>>>> -->
+    <script src="https://kit.fontawesome.com/79659e1450.js" crossorigin="anonymous"></script>
+    <!-- <<<<<<<TailWind& Daisy Ui CDN>>>>>>> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7fda18',
+                        secondary: '#111111',
+                        color1: '#ffbf0f',
+                        color2: '#b16514',
+                        color3: '#f5c851 ',
+                        mobileMenu: '#f7f8f8',
+                        body: '#03071299',
+                        buttonColor: '#477b0b ',
+                    },
+                    fontFamily:{
+                        Lexend: 'Lexend',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-Lexend">
+    <!-- <<<<<Header Section Start>>>>> -->
+    <header class="sticky top-0 z-10 backdrop-blur-sm bg-white/30">
+    <!-- <<<<<Nav Bar Start>>>>>> -->
+        <nav class="bg-pink-50 shadow-md">
+            <div class="navbar">
+              <div class="navbar-start p-0 py-2">
+                <button class="text-orange-100 font-semibold px-4 py-2 rounded-md bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 md:text-xl text-[12px] ">Blog</button>
+              </div>
+              <div class="navbar-center">
+                <img class="md:h-full h-[20px]"  src="./assets/logo.png" alt="">
+                <h1 class="font-semibold text-[12px] md:text-xl px-2 md:px-4 py-6 text-secondary">Donate Bangladesh</h1>
+              </div>
+              <div class="navbar-end">
+                <div class="flex items-center md:gap-2 font-bold text-xl">
+                    <div>
+                        <i><img class="md:h-full h-[18px]" src="./assets/coin.png" alt=""></i>
+                    </div>
+                    <p class="text-gray-600 font-medium md:text-xl text-[16px]"><span>5500</span> BDT</p>
+                </div>
+                
+              </div>
+            </div> 
+          </nav>
+    <!-- <<<<<Nav Bar End>>>>>> -->
+        <!-- <<<<<Donation & History>>>>>> -->
+        <div class="flex justify-center my-10 pb-10">
+            <button class="mr-4 px-4 py-2 bg-violet-500 rounded-md md:text-xl text-[12px] text-orange-100 font-semibold">Donation</button>
+            <button class="px-4 py-2 rounded-md md:text-xl text-[12px] text-gray-600 font-semibold bg-gray-300">History</button>
+         </div>
+    </header>
+    <!-- <<<<<Header Section End>>>>> -->
+    <main>
+    <!-- Tab for Donation & History -->
+     <div>
+        
+     </div>
+     <!-- <<<<<Donation Form>>>>>> -->
+     <!-- <<<<Card[01]>>>>    -->
+        <section class="w-11/12 mx-auto  p-6 mb-8  border-gray-300 rounded-lg border">
+    
+            <div class="flex lg:flex-row flex-col justify-between items-center ">
+               <!-- <<<<Image Content>>>>> -->
+               <div class="lg:w-1/2 w-full">
+                   <img class="w-full" src="./assets/noakhali.png" alt="">
+               </div>
+               <!-- <<<Text Content>>> -->
+               <div class="lg:w-1/2 w-full p-4 md:space-y-6 space-y-4">
+                   <button class="px-4 py-2 flex items-center gap-2 font-bold mx-2 p-2 bg-gray-100">
+                    <div>
+                        <i class=""><img src="./assets/coin.png" alt=""></i>
+                    </div>
+                    <!-- <<<<<Card[01 MoneyValue]>>>>> -->
+                       <div class="text-gray-600 font-medium text-base">
+                           <span id="card01-money-value">0</span> BDT
+                       </div>
+                    </button>
+                   <!-- <<<<<Card[01 Title]>>>>> -->
+                   <h1 id="card01-title" class="font-bold text-secondary md:text-xl text-[16px]">Donate for Flood at Noakhali, Bangladesh</h1>
+                   <!-- <<<<<Card[01 Description]>>>>> -->
+                   <p class="text-gray-600 font-light md:text-base text-[12px]">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                   <!-- <<<<<Card[01 Input]>>>>> -->
+                   <input 
+                    id="card01-input-field" class="w-full md:text-base text-[14px] border border-gray-200 p-4 required rounded-2xl"
+                    type="text" 
+                    placeholder="Write Donation Amount"
+                    name="">
+                    <!-- <<<<<Card[01 Button]>>>>> -->
+                    <button id="card01-button" class="w-full md:text-xl text-[14px] px-4 py-2 bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 font-semibold text-orange-100">Donate Now</button>
+               </div>
+            </div>
+        </section>
+     <!-- <<<<Card[02]>>>>    -->
+        <section class="w-11/12 mx-auto  p-6 mb-8  border-gray-300 rounded-lg border">
+    
+            <div class="flex lg:flex-row flex-col justify-between items-center ">
+               <!-- <<<<Image Content>>>>> -->
+               <div class="lg:w-1/2 w-full">
+                   <img class="w-full" src="./assets/feni.png" alt="">
+               </div>
+               <!-- <<<Text Content>>> -->
+               <div class="lg:w-1/2 w-full p-4 md:space-y-6 space-y-4">
+                   <button class="px-4 py-2 flex items-center gap-2 font-bold mx-2 p-2 bg-gray-100">
+                    <div>
+                        <i class=""><img src="./assets/coin.png" alt=""></i>
+                    </div>
+                    <!-- <<<<<Card[02 MoneyValue]>>>>> -->
+                       <div class="text-gray-600 font-medium text-base">
+                           <span id="card02-money-value">600</span> BDT
+                       </div>
+                    </button>
+                   <!-- <<<<<Card[02 Title]>>>>> -->
+                   <h1 id="card02-title" class="font-bold text-secondary md:text-xl text-[16px]">Donate for Flood Relief in Feni,Bangladesh</h1>
+                   <!-- <<<<<Card[02 Description]>>>>> -->
+                   <p class="text-gray-600 font-light md:text-base text-[12px]">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                   <!-- <<<<<Card[02 Input]>>>>> -->
+                   <input 
+                    id="card02-input-field" class="w-full md:text-base text-[14px] border border-gray-200 p-4 required rounded-2xl"
+                    type="text" 
+                    placeholder="Write Donation Amount"
+                    name="">
+                    <!-- <<<<<Card[02 Button]>>>>> -->
+                    <button id="card02-button" class="w-full md:text-xl text-[14px] px-4 py-2 bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 font-semibold text-orange-100">Donate Now</button>
+               </div>
+            </div>
+        </section>
+     <!-- <<<<Card[03]>>>>    -->
+        <section class="w-11/12 mx-auto  p-6 mb-8  border-gray-300 rounded-lg border">
+    
+            <div class="flex lg:flex-row flex-col justify-between items-center ">
+               <!-- <<<<Image Content>>>>> -->
+               <div class="lg:w-1/2 w-full">
+                   <img class="w-full" src="./assets/quota-protest.png" alt="">
+               </div>
+               <!-- <<<Text Content>>> -->
+               <div class="lg:w-1/2 w-full p-4 md:space-y-6 space-y-4">
+                   <button class="px-4 py-2 flex items-center gap-2 font-bold mx-2 p-2 bg-gray-100">
+                    <div>
+                        <i class=""><img src="./assets/coin.png" alt=""></i>
+                    </div>
+                    <!-- <<<<<Card[03 MoneyValue]>>>>> -->
+                       <div class="text-gray-600 font-medium text-base">
+                           <span id="card03-money-value">2400</span> BDT
+                       </div>
+                    </button>
+                   <!-- <<<<<Card[03 Title]>>>>> -->
+                   <h1 id="card03-title" class="font-bold text-secondary md:text-xl text-[16px]">Aid for Injured in the Quota Movement</h1>
+                   <!-- <<<<<Card[03 Description]>>>>> -->
+                   <p class="text-gray-600 font-light md:text-base text-[12px]">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                   <!-- <<<<<Card[03 Input]>>>>> -->
+                   <input 
+                    id="card03-input-field" class="w-full md:text-base text-[14px] border border-gray-200 p-4 required rounded-2xl"
+                    type="text" 
+                    placeholder="Write Donation Amount"
+                    name="">
+                    <!-- <<<<<Card[03 Button]>>>>> -->
+                    <button id="card03-button" class="w-full md:text-xl text-[14px] px-4 py-2 bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 font-semibold text-orange-100">Donate Now</button>
+               </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
