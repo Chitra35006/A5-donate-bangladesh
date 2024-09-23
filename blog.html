@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- <<<<<Google Font>>>>> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <<<<<<<TailWind& Daisy Ui CDN>>>>>>> -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#7fda18',
+                            secondary: '#111111',
+                            color1: '#ffbf0f',
+                            color2: '#b16514',
+                            color3: '#f5c851 ',
+                            mobileMenu: '#f7f8f8',
+                            body: '#03071299',
+                            buttonColor: '#477b0b ',
+                        },
+                        fontFamily:{
+                            Lexend: 'Lexend',
+                        },
+                    },
+                },
+            }
+        </script>
+</head>
+<body>
+<!-- <<<<<Header Section Start>>>>> -->
+    <header class="sticky top-0 z-10 backdrop-blur-sm bg-white/30">
+        <!-- <<<<<Nav Bar Start>>>>>> -->
+            <nav class="bg-pink-50 shadow-md">
+                <div class="navbar">
+                  <div class="navbar-start p-0 py-2">
+                    
+                    <a href="index.html"><button class="text-orange-100 font-semibold px-4 py-2 rounded-md bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 md:text-xl text-[12px] ">Home</button></a>
+                    
+                  </div>
+                  <div class="navbar-center">
+                    <img class="md:h-full h-[20px]"  src="./assets/logo.png" alt="">
+                    <h1 class="font-semibold text-[12px] md:text-xl px-2 md:px-4 py-6 text-secondary">Donate Bangladesh</h1>
+                  </div>
+                  <div class="navbar-end">
+                    <div class="flex items-center md:gap-2 font-bold text-xl">
+                        <div>
+                            <i><img class="md:h-full h-[18px]" src="./assets/coin.png" alt=""></i>
+                        </div>
+                        <p class="text-gray-600 font-medium md:text-xl text-[16px]"><span>5500</span> BDT</p>
+                    </div>
+                    
+                  </div>
+                </div> 
+              </nav>
+        <!-- <<<<<Nav Bar End>>>>>> -->
+        </header>
+        <!-- <<<<<Header Section End>>>>> -->
+    <main>
+    <div class="w-10/12 mx-auto my-20">
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium  text-indigo-900">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content bg-gradient-to-r from-pink-200 to-violet-400 ">
+              <p class="p-2">The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium text-indigo-900">How do you select an element from the DOM?</div>
+            <div class="collapse-content bg-gradient-to-r from-pink-200 to-violet-400 ">
+              <p class="p-2">JavaScript provides several methods to select DOM elements I can select element by those methods:<br>
+                •	getElementById()<br>
+                •	getElementsByClassName()<br>
+                •	getElementsByTagName()<br>
+                •	querySelector()<br>
+                •	querySelectorAll()
+                </p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium  text-indigo-900">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content bg-gradient-to-r from-pink-200 to-violet-400 ">
+              <p class="p-2">Event Delegation is basically a pattern to handle events efficiently. Instead of adding an event listener to each and every similar element, we can add an event listener to a parent element and call an event on a particular target using the .target property of the event object <br>
+              Benefits of Event Delegation :: Event Delegation is a useful pattern that allows you to write cleaner code, and create fewer event listeners with similar logic.
+                </p>
+            </div>
+          </div> 
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium  text-indigo-900">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content bg-gradient-to-r from-pink-200 to-violet-400 ">
+              <p class="p-2">The below list contains different methods to manipulate DOM.<br>
+                •	DOM Element Selectors<br>
+                1.	querySelector()<br>
+                2.	querySelectorAll()<br>
+                3.	getElementById()<br>
+                4.	getElementByClassName()<br>
+                5.	getElementByTagName()<br>
+                •	DOM content manipulators<br>
+                •	DOM element creators<br>
+                •	DOM CSS manipulators<br>
+                A div has a id name ‘place-container’<br>
+                I can change the style of this div by  DOM Element Selectors<br>
+                Here the code<br>
+                Const placeContainer = document.getElementById(‘place-container’);<br>
+                placeContainer.style.backgroundColor = ‘yellow’;
+                </p>
+            </div>
+          </div> 
+    </div>
+    </main>
+</body>
+</html>
