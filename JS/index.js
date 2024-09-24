@@ -49,7 +49,7 @@ card01Button.addEventListener('click',function(){
 
         const cardFinalValue = card01Value + card01InputFieldValue;
         document.getElementById('card01-money-value').innerText = cardFinalValue;
-        
+    
         const cardTitle = getCardTitle('card01-title');
         const date = new Date ();
         const historyItem = document.createElement('div');
@@ -61,6 +61,7 @@ card01Button.addEventListener('click',function(){
         const historyContainer = document.getElementById('history-list');
         historyContainer.insertBefore(historyItem,historyContainer.firstChild);
     }
+    document.getElementById('card01-input-field').value = "";
     
     
 })
@@ -95,7 +96,7 @@ card02Button.addEventListener('click',function(){
         const historyContainer = document.getElementById('history-list');
         historyContainer.insertBefore(historyItem,historyContainer.firstChild);
     }
-    
+    document.getElementById('card02-input-field').value = "";
     
 })
 //Card 03
@@ -129,6 +130,6 @@ card03Button.addEventListener('click',function(){
         const historyContainer = document.getElementById('history-list');
         historyContainer.insertBefore(historyItem,historyContainer.firstChild);
     }
-    
+    document.getElementById('card03-input-field').value = ""; 
     
 })
