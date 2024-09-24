@@ -38,3 +38,19 @@ function showModal(){
 function closeModal(){
     document.getElementById('myModal').classList.add('hidden');
 }
+
+window.addEventListener('scroll',function(){
+    const blurHeight = 100;
+    const backGround = document.getElementById('nav-bg');
+    const navBg = document.getElementById('nav-bg-2')
+    const scrollPosition = window.scrollY;
+
+    if(scrollPosition > blurHeight){
+        backGround.classList.add('filter','backdrop-blur-sm','bg-white/30');
+        navBg.classList.remove('bg-pink-50');
+    }
+    else{
+        backGround.classList.remove('filter','backdrop-blur-sm','bg-white/30');
+        navBg.classList.add('bg-pink-50');
+    }
+})
