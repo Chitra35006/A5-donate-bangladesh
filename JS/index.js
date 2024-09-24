@@ -34,10 +34,13 @@ donationTab.addEventListener('click',function(){
 const card01Button = document.getElementById('card01-button');
 card01Button.addEventListener('click',function(){
     const card01InputFieldValue = getInputValueById('card01-input-field');
-    if((isNaN(card01InputFieldValue))){
-        alert('Input Must be a Number');
+    if((isNaN(card01InputFieldValue)) || ){
+        alert('Amount Must be a Number');
     }
-    else if(( card01InputFieldValue <0)  ||  (card01InputFieldValue === '')){
+    else if(card01InputFieldValue.includes(-0)){
+    alert("You Can't add this as Amount")
+    }
+    else if(( card01InputFieldValue <=0)  ||  (card01InputFieldValue === '')){
         alert('Invalid Donation Amount')
     }
     else if(card01InputFieldValue > parseFloat(document.getElementById('main-amount').innerText)){
