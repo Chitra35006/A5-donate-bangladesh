@@ -34,8 +34,11 @@ donationTab.addEventListener('click',function(){
 const card01Button = document.getElementById('card01-button');
 card01Button.addEventListener('click',function(){
     const card01InputFieldValue = getInputValueById('card01-input-field');
-    if((isNaN(card01InputFieldValue)) || ( card01InputFieldValue <0)  ||  (card01InputFieldValue === '')){
-        alert('Invalid Donation Amount');
+    if((isNaN(card01InputFieldValue))){
+        alert('Input Must be a Number');
+    }
+    else if(( card01InputFieldValue <0)  ||  (card01InputFieldValue === '')){
+        alert('Invalid Donation Amount')
     }
     else if(card01InputFieldValue > parseFloat(document.getElementById('main-amount').innerText)){
         alert("You Don't Have Enough Balance");
@@ -69,8 +72,11 @@ card01Button.addEventListener('click',function(){
 const card02Button = document.getElementById('card02-button');
 card02Button.addEventListener('click',function(){
     const card02InputFieldValue = getInputValueById('card02-input-field');
-    if((isNaN(card02InputFieldValue)) || ( card02InputFieldValue <0)  ||  (card02InputFieldValue === '')){
-        alert('Invalid Donation Amount');
+    if(isNaN(card02InputFieldValue)){
+        alert('Input Must be a Number');
+    }
+    else if(( card02InputFieldValue <0)  ||  (card02InputFieldValue === '')){
+        alert('Invalid Donation Amount')
     }
     else if(card02InputFieldValue > parseFloat(document.getElementById('main-amount').innerText)){
         alert("You Don't Have Enough Balance");
@@ -103,8 +109,11 @@ card02Button.addEventListener('click',function(){
 const card03Button = document.getElementById('card03-button');
 card03Button.addEventListener('click',function(){
     const card03InputFieldValue = getInputValueById('card03-input-field');
-    if((isNaN(card03InputFieldValue)) || ( card03InputFieldValue <0)  ||  (card03InputFieldValue === '')){
-        alert('Invalid Donation Amount');
+    if(isNaN(card03InputFieldValue)){
+        alert('Input Must be a Number');
+    }
+    else if(( card03InputFieldValue <0)  ||  (card03InputFieldValue === '')){
+        alert('Invalid Donation Amount')
     }
     else if(card03InputFieldValue > parseFloat(document.getElementById('main-amount').innerText)){
         alert("You Don't Have Enough Balance");
