@@ -58,7 +58,7 @@ card01Button.addEventListener('click',function(){
         const historyItem = document.createElement('div');
         historyItem.className = 'p-4 rounded-md border md:text-base text-[14px] border-gray-200 flex flex-col justify-start';
         historyItem.innerHTML = `
-        <p class="font-bold md:text-xl text-[15px] text-[#111111]">${card01InputFieldValue} Taka is ${cardTitle}</p> <br>
+        <p class="font-bold md:text-xl text-[15px] text-[#111111]">${card01InputFieldValue} Taka is donated to ${cardTitle}</p> <br>
         <p class="md:text-base text-[12px] font-light">${date.toDateString()} ${date.toLocaleTimeString()} ${date.toTimeString()}</p>
         `
         const historyContainer = document.getElementById('history-list');
@@ -96,7 +96,7 @@ card02Button.addEventListener('click',function(){
         const historyItem = document.createElement('div');
         historyItem.className = 'p-4 rounded-md border md:text-base text-[14px] border-gray-200 flex flex-col justify-start';
         historyItem.innerHTML = `
-        <p class="font-bold md:text-xl text-[15px] text-[#111111]">${card02InputFieldValue} Taka is ${cardTitle}</p> <br>
+        <p class="font-bold md:text-xl text-[15px] text-[#111111]">${card02InputFieldValue} Taka is donated to ${cardTitle}</p> <br>
         <p class="md:text-base text-[12px] font-light">${date.toDateString()} ${date.toLocaleTimeString()} ${date.toTimeString()}</p>
         `
         const historyContainer = document.getElementById('history-list');
@@ -136,7 +136,7 @@ card03Button.addEventListener('click',function(){
         const historyItem = document.createElement('div');
         historyItem.className = 'p-4 rounded-md border md:text-base text-[14px] border-gray-200 flex flex-col justify-start';
         historyItem.innerHTML = `
-        <p class="font-bold md:text-xl text-[15px] text-[#111111]">${card03InputFieldValue} Taka is ${cardTitle}</p> <br>
+        <p class="font-bold md:text-xl text-[15px] text-[#111111]">${card03InputFieldValue} Taka is donated to ${cardTitle}</p> <br>
         <p class="md:text-base text-[12px] font-light">${date.toDateString()} ${date.toLocaleTimeString()} ${date.toTimeString()}</p>
         `
         const historyContainer = document.getElementById('history-list');
