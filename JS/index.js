@@ -34,13 +34,10 @@ donationTab.addEventListener('click',function(){
 const card01Button = document.getElementById('card01-button');
 card01Button.addEventListener('click',function(){
     const card01InputFieldValue = getInputValueById('card01-input-field');
-    if((isNaN(card01InputFieldValue)) || ){
+    if(isNaN(card01InputFieldValue)){
         alert('Amount Must be a Number');
     }
-    else if(card01InputFieldValue.includes(-0)){
-    alert("You Can't add this as Amount")
-    }
-    else if(( card01InputFieldValue <=0)  ||  (card01InputFieldValue === '')){
+    else if( card01InputFieldValue <=0){
         alert('Invalid Donation Amount')
     }
     else if(card01InputFieldValue > parseFloat(document.getElementById('main-amount').innerText)){
@@ -76,9 +73,9 @@ const card02Button = document.getElementById('card02-button');
 card02Button.addEventListener('click',function(){
     const card02InputFieldValue = getInputValueById('card02-input-field');
     if(isNaN(card02InputFieldValue)){
-        alert('Input Must be a Number');
+        alert('Amount Must be a Number');
     }
-    else if(( card02InputFieldValue <0)  ||  (card02InputFieldValue === '')){
+    else if( card02InputFieldValue <=0){
         alert('Invalid Donation Amount')
     }
     else if(card02InputFieldValue > parseFloat(document.getElementById('main-amount').innerText)){
@@ -112,10 +109,13 @@ card02Button.addEventListener('click',function(){
 const card03Button = document.getElementById('card03-button');
 card03Button.addEventListener('click',function(){
     const card03InputFieldValue = getInputValueById('card03-input-field');
-    if(isNaN(card03InputFieldValue)){
-        alert('Input Must be a Number');
+    if(card03InputFieldValue === ''){
+        alert("You Can't Submit Empty Value")
     }
-    else if(( card03InputFieldValue <0)  ||  (card03InputFieldValue === '')){
+    else if(isNaN(card03InputFieldValue)){
+        alert('Amount Must be a Number');
+    }
+    else if(( card03InputFieldValue <=0)  ||  (card03InputFieldValue === '')){
         alert('Invalid Donation Amount')
     }
     else if(card03InputFieldValue > parseFloat(document.getElementById('main-amount').innerText)){
