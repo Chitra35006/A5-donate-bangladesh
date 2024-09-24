@@ -54,7 +54,7 @@
                     <div>
                         <i><img class="md:h-full h-[18px]" src="./assets/coin.png" alt=""></i>
                     </div>
-                    <p class="text-gray-600 font-medium md:text-xl text-[16px]"><span>5500</span> BDT</p>
+                    <p class="text-gray-600 font-medium md:text-xl text-[16px]"><span id="main-amount">5500</span> BDT</p>
                 </div>
                 
               </div>
@@ -63,17 +63,15 @@
     <!-- <<<<<Nav Bar End>>>>>> -->
         <!-- <<<<<Donation & History>>>>>> -->
         <div class="flex justify-center my-10 pb-10">
-            <button class="mr-4 px-4 py-2 bg-violet-500 rounded-md md:text-xl text-[12px] text-orange-100 font-semibold">Donation</button>
-            <button class="px-4 py-2 rounded-md md:text-xl text-[12px] text-gray-600 font-semibold bg-gray-300">History</button>
+            <button id="donation-button" class="mr-4 px-4 py-2 bg-violet-500 rounded-md md:text-xl text-[12px] text-orange-100 font-semibold">Donation</button>
+            <button id="history-button" class="px-4 py-2 rounded-md md:text-xl text-[12px] text-gray-600 font-normal bg-gray-300">History</button>
          </div>
     </header>
     <!-- <<<<<Header Section End>>>>> -->
     <main>
-    <!-- Tab for Donation & History -->
-     <div>
-        
-     </div>
-     <!-- <<<<<Donation Form>>>>>> -->
+    
+     <div id="donation-container">
+        <!-- <<<<<Donation Form>>>>>> -->
      <!-- <<<<Card[01]>>>>    -->
         <section class="w-11/12 mx-auto  p-6 mb-8  border-gray-300 rounded-lg border">
     
@@ -176,8 +174,9 @@
                </div>
             </div>
         </section>
+     </div>
         <!-- <<<<<<History Section>>>>> -->
-        <div id="history-container" class="border border-gray-300 shadow-md my-20">
+        <div id="history-container" class="border border-gray-300 shadow-md my-20 hidden">
             <div id="history-list" class="grid grid-cols-1 gap-3"></div>
         </div>
     </main>
