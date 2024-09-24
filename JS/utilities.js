@@ -5,6 +5,9 @@ function getInputValueById(id){
 function getTextBalance(id){
     return parseFloat(document.getElementById(id).innerText);
 }
+function getCardTitle(id){
+    return (document.getElementById(id).innerText);
+}
 
 function NavigateSection(id1, id2) {
     id1.classList.add(
@@ -27,4 +30,11 @@ function NavigateSection(id1, id2) {
         'text-gray-600',
         'font-normal'
     );
+}
+
+function showModal(){
+    document.getElementById('myModal').classList.remove('hidden');
+}
+function closeModal(){
+    document.getElementById('myModal').classList.add('hidden');
 }

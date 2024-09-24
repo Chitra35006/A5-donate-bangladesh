@@ -38,21 +38,21 @@
     <!-- <<<<<Header Section Start>>>>> -->
     <header class="sticky top-0 z-10 backdrop-blur-sm bg-white/30">
     <!-- <<<<<Nav Bar Start>>>>>> -->
-        <nav class="bg-pink-50 shadow-md">
+        <nav class="bg-pink-50 shadow-md  px-2">
             <div class="navbar">
-              <div class="navbar-start p-0 py-2">
+              <div class="navbar-start">
                 
-                <button id="home-button" class="text-orange-100 font-semibold px-4 py-2 rounded-md bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 md:text-xl text-[12px] ">Blog</button>
+                <button id="home-button" class="text-orange-100 font-semibold px-4 py-2 rounded-md bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 md:text-xl text-[12px]">Blog</button>
                 
               </div>
               <div class="navbar-center">
-                <img class="md:h-full h-[20px]"  src="./assets/logo.png" alt="">
-                <h1 class="font-semibold text-[12px] md:text-xl px-2 md:px-4 py-6 text-secondary">Donate Bangladesh</h1>
+                <img class="md:h-full h-[25px]"  src="./assets/logo.png" alt="">
+                <h1 class="font-semibold hidden md:block text-[12px] md:text-xl px-2 md:px-4 py-6 text-secondary">Donate Bangladesh</h1>
               </div>
               <div class="navbar-end">
                 <div class="flex items-center md:gap-2 font-bold text-xl">
                     <div>
-                        <i><img class="md:h-full h-[18px]" src="./assets/coin.png" alt=""></i>
+                        <i><img class="md:h-full h-[20px]" src="./assets/coin.png" alt=""></i>
                     </div>
                     <p class="text-gray-600 font-medium md:text-xl text-[16px]"><span id="main-amount">5500</span> BDT</p>
                 </div>
@@ -97,12 +97,12 @@
                    <p class="text-gray-600 font-light md:text-base text-[12px]">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                    <!-- <<<<<Card[01 Input]>>>>> -->
                    <input 
-                    id="card01-input-field" class="w-full md:text-base text-[14px] border border-gray-200 p-4 required rounded-2xl"
+                    id="card01-input-field" class="w-full md:text-base text-[14px] border border-gray-200 p-4 required rounded-xl"
                     type="text" 
                     placeholder="Write Donation Amount"
                     name="">
                     <!-- <<<<<Card[01 Button]>>>>> -->
-                    <button id="card01-button" class="w-full md:text-xl text-[14px] px-4 py-2 bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 font-semibold text-orange-100">Donate Now</button>
+                    <button id="card01-button" class="w-full md:text-xl text-[14px] px-4 py-2 rounded-xl bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 font-semibold text-orange-100">Donate Now</button>
                </div>
             </div>
         </section>
@@ -136,7 +136,7 @@
                     placeholder="Write Donation Amount"
                     name="">
                     <!-- <<<<<Card[02 Button]>>>>> -->
-                    <button id="card02-button" class="w-full md:text-xl text-[14px] px-4 py-2 bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 font-semibold text-orange-100">Donate Now</button>
+                    <button id="card02-button" class="w-full md:text-xl text-[14px] px-4 py-2 rounded-2xl bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 font-semibold text-orange-100">Donate Now</button>
                </div>
             </div>
         </section>
@@ -170,15 +170,29 @@
                     placeholder="Write Donation Amount"
                     name="">
                     <!-- <<<<<Card[03 Button]>>>>> -->
-                    <button id="card03-button" class="w-full md:text-xl text-[14px] px-4 py-2 bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 font-semibold text-orange-100">Donate Now</button>
+                    <button id="card03-button" class="w-full md:text-xl text-[14px] px-4 py-2 rounded-xl bg-gradient-to-r from-violet-700 to-pink-500 hover:text-cyan-100 font-semibold text-orange-100">Donate Now</button>
                </div>
             </div>
         </section>
      </div>
         <!-- <<<<<<History Section>>>>> -->
-        <div id="history-container" class="border border-gray-300 shadow-md my-20 hidden">
-            <div id="history-list" class="grid grid-cols-1 gap-3"></div>
+        <div id="history-container" class=" w-10/12 mx-auto md:my-20 my:10 hidden">
+            <div id="history-list" class="grid grid-cols-1 gap-3 mb-10"></div>
         </div>
+     <!-- <<<<<Modal>>>> -->
+        <dialog id="myModal" class="modal  rounded-lg  space-y-4 p-6 ">
+        <div class="modal-box flex flex-col items-center text-center">
+            <p class="font-bold text-black md:text-2xl">Congrates</p>
+        <img class="mx-auto my-4" src="./assets/coin.png" alt="">
+        <p class="py-4 text-gray-500 font-normal">You Have Donated for Humankind</p>
+        <p class="text-lg font-bold text-black">Successfully</p>
+        <div class="modal-action justify-center">
+            <form method="dialog">
+                <button class="bg-gradient-to-r from-pink-200 to-violet-400 px-4 py-2 rounded-lg font-bold text-indigo-900">Close Confirmation</button>
+            </form>
+        </div>
+        </div>
+        </dialog>
     </main>
     <script src="JS/utilities.js"></script>
     <script src="JS/index.js"></script>
